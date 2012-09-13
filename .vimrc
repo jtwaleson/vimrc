@@ -5,6 +5,7 @@ set shiftwidth=4
 set tabstop=4
 set number
 filetype plugin indent on
+nnoremap <F5> :setlocal spell! spelllang=en_gb<CR>
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <buffer> <S-e> :w<CR>:!/usr/bin/env python % <CR>
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
@@ -55,4 +56,17 @@ function ToggleHex()
   let &mod=l:modified
   let &readonly=l:oldreadonly
   let &modifiable=l:oldmodifiable
+endfunction
+
+au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} call DistractionFreeWriting()
+function! DistractionFreeWriting()
+    colorscheme iawriter
+    set background=light
+    set gfn=Cousine:h14                " font to use
+    set lines=40 columns=100           " size of the editable area
+    set guioptions-=r                  " remove right scrollbar
+    set laststatus=0                   " don't show status line
+    set noruler                        " don't show ruler
+    set nonumber
+    set linebreak                      " break the lines on words
 endfunction
