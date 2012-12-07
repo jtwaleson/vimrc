@@ -1,3 +1,4 @@
+call pathogen#infect() 
 syntax on
 set dir=/var/tmp/vimswp
 set expandtab
@@ -8,7 +9,6 @@ filetype plugin indent on
 nnoremap <F5> :setlocal spell! spelllang=en_gb<CR>
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <buffer> <S-e> :w<CR>:!/usr/bin/env python % <CR>
-au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 nnoremap <F3> :w<CR>:!git diff %<CR>:! git commit %<CR>
 nnoremap <F4> :w<CR>:!coffee --compile --output js/ coffee/<CR>
 set t_Co=256
@@ -70,3 +70,13 @@ function! DistractionFreeWriting()
     set nonumber
     set linebreak                      " break the lines on words
 endfunction
+
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_check_on_open=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_mode_map = { 'mode': 'active',
+                            \ 'active_filetypes': ['javascript', 'python'],
+                            \ 'passive_filetypes': ['puppet'] }
