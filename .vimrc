@@ -5,6 +5,7 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set number
+set incsearch
 filetype plugin indent on
 nnoremap <F5> :setlocal spell! spelllang=en_gb<CR>
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
