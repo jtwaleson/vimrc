@@ -15,6 +15,11 @@ nnoremap <F4> :w<CR>:!coffee --compile --output js/ coffee/<CR>
 set t_Co=256
 colorscheme Tomorrow-Night-Eighties
 
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+set undoreload=10000
+
 
 
 "hexmode?
@@ -76,8 +81,8 @@ endfunction
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_check_on_open=1
-let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=0
+let g:syntastic_auto_loc_list=0
 let g:syntastic_mode_map = { 'mode': 'active',
                             \ 'active_filetypes': ['javascript', 'python'],
                             \ 'passive_filetypes': ['puppet'] }
