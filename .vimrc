@@ -15,6 +15,7 @@ set background=dark
 set mouse=a
 set mousehide
 set history=10000
+set showmatch
 filetype plugin indent on
 
 colorscheme Tomorrow-Night-Eighties
