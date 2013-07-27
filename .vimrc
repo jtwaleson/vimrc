@@ -38,6 +38,7 @@ map <leader>gw :Gwrite<CR>
 map <leader>w <C-W><C-O>
 map <leader>p :CtrlPBuffer<CR>
 map <leader>u :UndotreeToggle<CR>
+map <leader>e :SyntasticCheck<CR>:Errors<CR><C-W>j
 
 execute pathogen#infect()
 let g:airline_enable_syntastic=1
@@ -46,6 +47,10 @@ let g:airline_detect_paste=1
 let g:aurline_enable_fugitive=1
 let g:airline_left_sep = '»'
 let g:airline_right_sep = '«'
+
+let g:syntastic_check_on_open=1
+let g:syntastic_python_checkers=['pyflakes', 'pep8']
+let g:syntastic_javascript_checkers = ['jshint']
 
 if has('persistent_undo')
     set undofile
