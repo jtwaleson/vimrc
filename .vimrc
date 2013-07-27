@@ -35,6 +35,7 @@ map <leader>gc :Gcommit<CR>
 map <leader>gs :Gstatus<CR>
 map <leader>gr :Gremove<CR>
 map <leader>gw :Gwrite<CR>
+map <leader>w <C-W><C-O>
 
 execute pathogen#infect()
 let g:airline_enable_syntastic=1
