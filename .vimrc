@@ -37,6 +37,7 @@ map <leader>gr :Gremove<CR>
 map <leader>gw :Gwrite<CR>
 map <leader>w <C-W><C-O>
 map <leader>p :CtrlPBuffer<CR>
+map <leader>u :UndotreeToggle<CR>
 
 execute pathogen#infect()
 let g:airline_enable_syntastic=1
