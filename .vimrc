@@ -22,6 +22,8 @@ filetype plugin indent on
 colorscheme Tomorrow-Night-Eighties
 
 nnoremap <F2> :set nonumber!<CR>
+vnoremap < <gv
+vnoremap > >gv
 
 execute pathogen#infect()
 let g:airline_enable_syntastic=1
