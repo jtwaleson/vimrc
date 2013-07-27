@@ -16,8 +16,6 @@ set mouse=a
 set mousehide
 set history=10000
 set showmatch
-set pastetoggle=<F12>
-nnoremap <F12> :set invpaste paste?<CR>
 filetype plugin indent on
 
 colorscheme Tomorrow-Night-Eighties
@@ -25,6 +23,17 @@ colorscheme Tomorrow-Night-Eighties
 nnoremap <F2> :set nonumber!<CR>
 vnoremap < <gv
 vnoremap > >gv
+
+set pastetoggle=<F12>
+nnoremap <F12> :set invpaste paste?<CR>
+
+let mapleader=','
+map <leader>= <C-W>=
+map <leader>gd :Gdiff<CR>
+map <leader>gb :Gblame<CR>
+map <leader>gc :Gcommit<CR>
+map <leader>gs :Gstatus<CR>
+map <leader>gr :Gremove<CR>
 
 execute pathogen#infect()
 let g:airline_enable_syntastic=1
