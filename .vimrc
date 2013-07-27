@@ -17,6 +17,7 @@ set mousehide
 set history=10000
 set showmatch
 set pastetoggle=<F12>
+nnoremap <F12> :set invpaste paste?<CR>
 filetype plugin indent on
 
 colorscheme Tomorrow-Night-Eighties
