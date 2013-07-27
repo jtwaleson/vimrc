@@ -40,6 +40,7 @@ map <leader>w <C-W><C-O>
 map <leader>p :CtrlPBuffer<CR>
 map <leader>u :UndotreeToggle<CR>
 map <leader>e :SyntasticCheck<CR>:Errors<CR><C-W>j
+map <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 execute pathogen#infect()
 let g:airline_enable_syntastic=1
