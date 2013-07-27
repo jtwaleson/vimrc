@@ -61,6 +61,5 @@ if has('persistent_undo')
     set undoreload=10000
 endif
 
-
 highlight ExtraWhitespace ctermbg=red guibg=red ctermfg=white
-match ExtraWhitespace /\s\+$\| \+\ze\t\| [^\t]\zs\t\+\| ^\t*\zs \+/
+match ExtraWhitespace /\s\+$\| \+\ze\t\| [^\t]\zs\t\+\| ^\t*\zs \+\|\t/
