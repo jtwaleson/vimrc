@@ -10,8 +10,8 @@ endif
 
 let s:save_cpo = &cpo
 set cpo-=C
-set sw=2
-set ts=2
+setlocal sw=2
+setlocal ts=2
 
 " Define some defaults in case the included ftplugins don't set them.
 let s:undo_ftplugin = ""
