@@ -17,6 +17,7 @@ set mousehide
 set history=10000
 set showmatch
 set fileformat=unix
+set autoindent
 filetype plugin indent on
 
 colorscheme Tomorrow-Night-Eighties
