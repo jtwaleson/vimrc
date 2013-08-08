@@ -36,6 +36,8 @@ map <leader>gc :Gcommit<CR>
 map <leader>gs :Gstatus<CR>
 map <leader>gr :Gremove<CR>
 map <leader>gw :Gwrite<CR>
+map <leader>gn :GitGutterNextHunk<CR>
+map <leader>gp :GitGutterPrevHunk<CR>
 map <leader>w <C-W><C-O>
 map <leader>p :CtrlPBuffer<CR>
 map <leader>u :UndotreeToggle<CR>
