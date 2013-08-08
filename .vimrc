@@ -12,7 +12,6 @@ set t_Co=256
 set laststatus=2
 set cursorline
 set background=dark
-set mouse=a
 set mousehide
 set history=10000
 set showmatch
