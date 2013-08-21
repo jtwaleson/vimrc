@@ -22,8 +22,6 @@ filetype plugin indent on
 colorscheme Tomorrow-Night-Eighties
 
 nnoremap <F2> :set nonumber!<CR>
-vnoremap < <gv
-vnoremap > >gv
 
 set pastetoggle=<F12>
 nnoremap <F12> :set invpaste paste?<CR>
