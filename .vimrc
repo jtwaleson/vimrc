@@ -1,7 +1,7 @@
 syntax on
 
 " No swap files next to original file
-set dir=/var/tmp/vimswp
+set dir=~/.cache/vim-swap
 
 set expandtab
 set shiftwidth=4
