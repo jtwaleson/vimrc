@@ -55,7 +55,7 @@ let g:airline_left_sep = '»'
 let g:airline_right_sep = '«'
 
 let g:syntastic_check_on_open=1
-let g:syntastic_python_checkers=['pyflakes', 'pep8']
+let g:syntastic_python_checkers=['flake8']
 let g:syntastic_javascript_checkers = ['jshint']
 
 if has('persistent_undo')
