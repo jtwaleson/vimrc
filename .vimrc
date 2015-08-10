@@ -48,7 +48,7 @@ map <leader>k <C-W>k
 map <leader>l <C-W>l
 
 execute pathogen#infect()
-let g:airline_enable_syntastic=1
+let g:airline#extensions#syntastic#enabled=1
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 let g:aurline_enable_fugitive=1
