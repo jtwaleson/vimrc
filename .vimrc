@@ -18,6 +18,7 @@ set showmatch
 set fileformat=unix
 set autoindent
 filetype plugin indent on
+au BufNewFile,BufRead *.md set filetype=markdown
 
 colorscheme Tomorrow-Night-Eighties
 
