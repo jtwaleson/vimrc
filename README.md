@@ -4,14 +4,18 @@ vimrc
 My vimrc files.
 
 ### Installation
+
+
+
 ```shell
 git clone --recursive https://github.com/jtwaleson/vimrc.git ~/.vim
 
-cd ~/.vim/bundle/youcompleteme
-git submodule update --init --recursive
-sudo apt-get install build-essential cmake python-dev
-./install.sh --clang-completer
-
-ln -s ~/.vim/vimrc ~/vimrc
 mkdir -p ~/.cache/{vim-swap,vim-undo}
+
+ln -sf ~/.vim/vimrc ~/.vimrc
+
+test -d ~/.vim/bundle/Vundle.git || mkdir -p ~/.vim/bundle && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+vim +BundleInstall! +qall
+
 ```
